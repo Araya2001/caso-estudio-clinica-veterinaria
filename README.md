@@ -1,14 +1,15 @@
 # Veterinary Clinic Management System
 
-A web application designed to manage veterinary clinic operations, including scheduling appointments, maintaining pet and owner records, and managing veterinary services.
+A web application designed to manage veterinary clinic operations, including scheduling appointments, maintaining pet and owner records, and
+managing veterinary services.
 
 ## Table of Contents
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -37,7 +38,7 @@ A web application designed to manage veterinary clinic operations, including sch
 Ensure you have the following installed:
 
 - Java 21 or later
-- Maven
+- Gradle
 - Docker (optional, for running the database locally)
 
 ### Installation
@@ -45,45 +46,45 @@ Ensure you have the following installed:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/vet-clinic-system.git
-    cd vet-clinic-system
+    git clone https://github.com/Araya2001/caso-estudio-clinica-veterinaria.git
+    cd caso-estudio-clinica-veterinaria
     ```
 
 2. **Build the Project:**
 
-    Use Maven to build the project:
+   Use Gradle to build the project:
 
     ```bash
-    mvn clean install
+    ./gradlew build
+    ```
+
+   Or on Windows:
+
+    ```bash
+    gradlew build
     ```
 
 3. **Run the Application:**
 
-    You can run the application using:
+   You can run the application using:
 
     ```bash
-    mvn spring-boot:run
+    ./gradlew bootRun
     ```
 
-### Optional - Running with Docker
-
-- If you want to use Docker for managing dependencies like databases:
+   Or on Windows:
 
     ```bash
-    docker-compose up
+    gradlew bootRun
     ```
 
 ## Usage
 
 Navigate to [http://localhost:8080](http://localhost:8080) in your browser to access the application interface.
 
-- **Login with default credentials (Admin):**
-  - Username: admin
-  - Password: admin
-
 - **Explore Features:**
-  - Add pets, pet owners, and schedule appointments via the UI.
-  - Manage veterinarian schedules and clinic resources.
+    - Add pets, pet owners, and schedule appointments via the UI.
+    - Manage veterinarian schedules and clinic resources.
 
 ## Contributing
 
