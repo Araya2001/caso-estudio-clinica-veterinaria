@@ -38,3 +38,4 @@ out/
 .vscode/
 
 build/vaadin-generated
+src/main/frontend
